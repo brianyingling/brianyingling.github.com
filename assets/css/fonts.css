@@ -1,0 +1,23 @@
+@font-face
+{
+  font-family: Amarante-Regular;
+  src: url('../fonts/Amarante-Regular.ttf');
+}
+
+@font-face
+{
+  font-family: Amarante-Bold;
+  src: url('../fonts/Amarante-Bold.ttf');
+}
+
+@font-face
+{
+  font-family: JuliusSansOne-Bold;
+  src: url('../fonts/JuliusSansOne-Bold.ttf');
+}
+
+@font-face
+{
+  font-family: JuliusSansOne-Regular;
+  src: url('../fonts/JuliusSansOne-Regular.ttf');
+};

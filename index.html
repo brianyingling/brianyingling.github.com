@@ -3,28 +3,241 @@
 <head>
   <title>Brian Yingling - Web Developer</title>
   <meta charset="utf-8" />
+
+  <!-- <link href="css/reset.css" rel="stylesheet" /> -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css' />
+  <link href="assets/css/fonts.css" rel="stylesheet" type="text/css" />
+
+  <style>
+
+  body {
+    font-family: Verdana, Arial, helvetica, sans-serif;
+    font-size: 12px;
+  }
+
+  .shadow {
+    box-shadow: 3px 3px 3px gray;
+  }
+
+  h1, h2 {
+    font-family: 'JuliusSansOne-Regular';
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    left: 20px;
+    top: 10px;
+    position: relative;
+    color: white;
+    text-shadow: 5px 5px 5px #000;
+
+  }
+
+  #main {
+    margin:  50px auto;
+    width: 1020px;
+  }
+
+  #bar {
+    background-color: maroon;
+    width: 1020px;
+    height: 7px;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+  }
+
+
+nav {
+  position: relative;
+  top: 0;
+  z-index: 8;
+}
+
+  body {
+    background: #cccc99 url('assets/images/bedge_grunge.png') repeat center;
+  }
+
+  #carousel {
+    position: relative;
+    overflow: hidden ;
+    top: -150px;
+    border: 10px solid #ffffff;
+    z-index: 2;
+    height: 357px;
+  }
+
+  #carousel figure {
+    position: relative;
+    top: -50px;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 1px 1px 1px gray;
+
+  }
+
+  #carousel ul li {
+    //display: none;
+    position: absolute;
+    /** added for carousel **/
+    top: 0;
+    left: 0;
+  }
+
+
+  article {
+    background-color: #fff;
+    //border-radius: 5px;
+    padding: 0 5px 0 5px;
+  }
+
+  #main_article {
+    position: relative;
+    top: -150px;
+  }
+
+  blockquote {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    position: relative;
+    text-align: right;
+    right: -20px;
+    z-index: 8;
+    color: #fff;
+    top: -20px;
+  }
+
+  hr {
+    width: 1000px;
+    height: 3px;
+    background-color: brown;
+    text-align: left;
+    border: 1px solid black;
+  }
+
+  p {
+    width: 1000px;
+  }
+
+  nav {
+    position: relative;
+    text-align: right;
+    right: 20px;
+    top: -85px;
+  }
+
+  nav ul li {
+    display: inline;
+    list-style-type: none;
+    background-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+
+
+ }
+
+nav ul{
+margin-top: 0;
+
+ }
+ nav ul li {
+  z-index: 2;
+ }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  nav ul li:hover {
+    background-color: orange;
+    z-index:2;
+  }
+
+  </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // for the carousel
+      // settings
+      var $slider = $('#carousel');
+      var $slide = 'li';
+      var $transition_time = 1000;
+      var $time_between_slides = 4000;
+
+      function slides() {
+        return $slider.find($slide);
+      }
+
+      slides().fadeOut();
+
+      console.log($slide + 1);
+      // set active classes
+      slides().first().addClass('active');
+      slides().first().fadeIn($transition_time);
+      // auto scroll
+      $interval = setInterval(
+        function() {
+          var $i = $slider.find($slide + '.active').index();
+          slides().eq($i).removeClass('active');
+          slides().eq($i).fadeOut($transition_time);
+
+          if(slides().length == $i + 1) $i = -1; // loop to start
+
+          slides().eq($i + 1).fadeIn($transition_time);
+          slides().eq($i + 1).addClass('active');
+        },
+          $transition_time + $time_between_slides
+        );
+
+
+    });
+  </script>
+
  </head>
  <body>
+  <div id="main">
   <header>
     <h1>Brian Yingling</h1>
     <h2>Web Developer</h2>
     <blockquote>Hi. I make a part of the Internet.</blockquote>
   </header>
   <nav>
+
     <ul>
       <li><a href="#" alt="About Me">About Me</a></li>
       <li><a href="#" alt="Portfolio">Portfolio</a></li>
       <li><a href="#" alt="Stuff I like">Stuff I Like</a></li>
     </ul>
   </nav>
+
   <section>
-    <img src="images/san_diego_skyline.jpg" width="1000"/>
-    <img src="images/melissa_mount_vernon.jpg" width="1000"/>
-    <img src="images/san_fran_golden_gate.jpg" width="1000"/>
-    <img src="images/san_fran_muir_woods.jpg" width="1000"/>
+    <!--
+    <img src="assets/images/san_diego_skyline.jpg" width="1000"/>
+    <img src="assets/images/san_fran_golden_gate.jpg" width="1000"/>
+    <img src="assets/images/san_fran_muir_woods2.jpg" width="1000"/>
+    <img src="assets/images/hastings_museum_nebraska.jpg" width="1000"/>
+  -->
+
+    <div id="carousel" class="shadow">
+      <ul>
+      <li id="image1">
+      <img src="assets/images/san_fran_muir_woods2.jpg" width="1000"/>
+      <figure>Muir Woods, San Francisco, California</figure></li>
+      <li id="image2">
+      <img src="assets/images/san_diego_skyline2.jpg" width="1000"/>
+      <figure>San Diego, California</figure></li>
+      </ul>
+
+    </div>
+    <!--
+    <img src="assets/images/boat_santa_monica.jpg" width="1000"/>
+    <img src="assets/images/sunset_santa_monica.jpg" width="1000"/>
+    <img src="assets/images/grand_canyon01.jpg" width="1000"/>
+  -->
   </section>
   <section>
-    <article>
+    <article id="main_article" class="shadow">
       <h1></h1>
       <p>
         In my past lives I've been a teacher, a publishing professional, a college student, and a traveler. Now I'm developing Web sites.</p>
@@ -45,5 +258,5 @@
       </nav>
   </section>
  </body>
-
+</div>
  <htm>
