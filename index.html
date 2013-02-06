@@ -29,8 +29,12 @@
     position: relative;
     color: white;
     text-shadow: 5px 5px 5px #000;
-
-  }
+ }
+ h3 {
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+ }
 
   #main {
     margin:  50px auto;
@@ -88,7 +92,16 @@ nav {
   article {
     background-color: #fff;
     //border-radius: 5px;
-    padding: 0 5px 0 5px;
+    padding: 0 10px 10px 10px;
+
+  }
+
+  article h3 {
+    color: navy;
+  }
+
+  article h3 + p {
+    margin-top: 0;
   }
 
   #main_article {
@@ -158,12 +171,13 @@ margin-top: 0;
 
   <script>
     $(document).ready(function() {
+      setTimeout(function() {
       // for the carousel
       // settings
       var $slider = $('#carousel');
       var $slide = 'li';
       var $transition_time = 1000;
-      var $time_between_slides = 4000;
+      var $time_between_slides = 5000;
 
       function slides() {
         return $slider.find($slide);
@@ -190,7 +204,7 @@ margin-top: 0;
           $transition_time + $time_between_slides
         );
 
-
+      },1000);
     });
   </script>
 
@@ -227,6 +241,14 @@ margin-top: 0;
       <li id="image2">
       <img src="assets/images/san_diego_skyline2.jpg" width="1000"/>
       <figure>San Diego, California</figure></li>
+      <li id="image3">
+      <img src="assets/images/grand_canyon02.jpg" width="1000"/>
+      <figure>Grand Canyon National Park</figure></li>
+      <li id="image3">
+      <img src="assets/images/flowers_st_louis.jpg" width="1000"/>
+      <figure>Flowers in St. Louis</figure></li>
+
+
       </ul>
 
     </div>
@@ -238,12 +260,11 @@ margin-top: 0;
   </section>
   <section>
     <article id="main_article" class="shadow">
-      <h1></h1>
+      <h3>Welcome to My Website</h3>
       <p>
         In my past lives I've been a teacher, a publishing professional, a college student, and a traveler. Now I'm developing Web sites.</p>
       <p>
-          Let me develop your web site. I'm currently enrolled in <a href="http://www.generalassemb.ly" alt="General Assembly">General Assembly</a>'s Web
-        Development Immersive program. It's an intensive 12-week program designed to teach students back-end, server-side development using Ruby on Rails. I'll also learn HTML/CSS (well, I already know this), JavaScript, jQuery, and many front-end development tools like Node.js and Backbone.js.</p>
+        Let me develop your web site. I'm currently enrolled in <a href="http://www.generalassemb.ly" alt="General Assembly">General Assembly</a>'s Web Development Immersive program. It's an intensive 12-week program designed to teach students back-end, server-side development using Ruby on Rails. I'll also learn HTML/CSS (well, I already know this), JavaScript, jQuery, and many front-end development tools like Node.js and Backbone.js.</p>
     </article>
   </section>
   <section>
