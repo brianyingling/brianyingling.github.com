@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Welcome to Foundation | Blog</title>
+  <title>Welcome to Foundation | Homepage</title>
 
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -26,77 +26,51 @@
 </head>
 <body>
 
-  <!-- Nav Bar -->
+  <!-- Nav and Banner -->
 
   <div class="row">
     <div class="twelve columns">
       <ul class="nav-bar">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="portfolio_00.html">Portfolio</a></li>
+        <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">About Me</a></li>
       </ul>
-
       <h1>&lt;Brian Yingling/&gt; <small>I Build a Part of the Internet</small>
-      <hr />
+      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+
     </div>
   </div>
 
+  <!-- End Nav and Banner -->
 
-  <!-- End Nav -->
 
-
-  <!-- Main Page Content and Sidebar -->
+  <!-- Main Content Section -->
 
   <div class="row">
 
-    <!-- Main Blog Content -->
-    <div class="nine columns" role="content">
+    <div class="seven columns">
+      <h4>My Portfolio</h4>
+      <p>Having an impressive portfolio in any creative profession is imperative. In my former teaching and publishing careers, I always had a showcase of my proudest work. Now that I'm a full-stack Ruby on Rails Web Developer, I'm here to let you in on some of my latest creations.
+      <p>Although I'm still "in-training" at General Assembly, I feel that we've crammed a lot in a very short time. So click on the "next" link below to get started. </p>
+      <p><a href="portfolio_01.html" class="secondary small button">Start the Show &rarr;</a></p>
+    </div>
 
-      <!-- Tumblr Feed -->
+    <div class="five columns">
 
-      <script type='text/javascript' src="http://brianmyingling.tumblr.com/js"></script>
+      <!-- Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results -->
+
+
+        <img src="images/portfolio_online.jpg" />
+
 
     </div>
 
-
-    <!-- End Main Content -->
-
-
-    <!-- Sidebar -->
-
-    <aside class="three columns">
-
-      <div class="panel">
-        <h5>Featured</h5>
-        <img src='http://m.c.lnkd.licdn.com/media/p/6/000/202/066/0700611.jpg' />
-        <p>I'm a former education and publishing professional turned Web developer. Currently learning
-          Ruby on Rails in General Assembly's Web Development Immersion program. These are my stories.</p>
-        <div class='icons'>
-          <img src="images/webicons-master/images/fc-webicon-tumblr-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-twitter-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-linkedin-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-github-s.png" />
-        </div>
-      </div>
-
-      <!-- Twitter Feed -->
-
-        <a class="twitter-timeline" href="https://twitter.com/BrianMYingling" data-widget-id="303615854573133827">Tweets by @BrianMYingling</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-
-
-      <!-- ENd Twitter Feed -->
-
-
-    </aside>
-
-    <!-- End Sidebar -->
   </div>
 
-  <!-- End Main Content and Sidebar -->
+
+
 
 
   <!-- Footer -->
@@ -106,14 +80,12 @@
       <hr />
       <div class="row">
         <div class="twelve columns">
-          <p>&copy; Copyright &copy; 2013 Brian Yingling. All Rights Reserved.</p>
+          <p>Copyright &copy; 2013 Brian Yingling. All Rights Reserved.</p>
         </div>
 
       </div>
     </div>
   </footer>
-
-  <!-- End Footer -->
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -162,6 +134,5 @@
 
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-
 </body>
 </html>

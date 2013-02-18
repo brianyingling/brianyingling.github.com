@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Welcome to Foundation | Blog</title>
+  <title>Welcome to Foundation | Homepage</title>
 
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -26,77 +26,54 @@
 </head>
 <body>
 
-  <!-- Nav Bar -->
+  <!-- Nav and Banner -->
 
   <div class="row">
     <div class="twelve columns">
       <ul class="nav-bar">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="portfolio_00.html">Portfolio</a></li>
+        <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">About Me</a></li>
       </ul>
-
       <h1>&lt;Brian Yingling/&gt; <small>I Build a Part of the Internet</small>
-      <hr />
     </div>
   </div>
 
+  <!-- End Nav and Banner -->
 
-  <!-- End Nav -->
 
-
-  <!-- Main Page Content and Sidebar -->
+  <!-- Main Content Section -->
 
   <div class="row">
 
-    <!-- Main Blog Content -->
-    <div class="nine columns" role="content">
+    <div class="six columns">
+      <h4>TutorialTube</h4>
+      <p>Imagine having to sift though the Internet just to find your favorite tutorials. With TutorialTube,
+        all you need to do is save your favorite links with the click of a button!</p>
+      <p>TutorialTube is one of our earliest assignments demonstrating the power of the Model-View-Controller
+        framework. Like all Web sites, TutorialTube was built using HTML and CSS. The back-end however, uses
+        Sinatra, a Rails-light web framework. TutorialTube saves its data using PostgresSQL. </p>
 
-      <!-- Tumblr Feed -->
-
-      <script type='text/javascript' src="http://brianmyingling.tumblr.com/js"></script>
-
+      <p>
+        <a href="portfolio_01.html" class="secondary small button">&larr; Previous</a>
+        <a href="portfolio_03.html" class="secondary small button">Next &rarr;</a>
+      </p>
     </div>
 
+    <div class="six columns">
 
-    <!-- End Main Content -->
+      <!-- Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results -->
 
+      <img class='screenshot' src='images/screenshot-tutorialtube01.png' />
+    </div>
 
-    <!-- Sidebar -->
-
-    <aside class="three columns">
-
-      <div class="panel">
-        <h5>Featured</h5>
-        <img src='http://m.c.lnkd.licdn.com/media/p/6/000/202/066/0700611.jpg' />
-        <p>I'm a former education and publishing professional turned Web developer. Currently learning
-          Ruby on Rails in General Assembly's Web Development Immersion program. These are my stories.</p>
-        <div class='icons'>
-          <img src="images/webicons-master/images/fc-webicon-tumblr-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-twitter-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-linkedin-s.png" />
-          <img src="images/webicons-master/images/fc-webicon-github-s.png" />
-        </div>
-      </div>
-
-      <!-- Twitter Feed -->
-
-        <a class="twitter-timeline" href="https://twitter.com/BrianMYingling" data-widget-id="303615854573133827">Tweets by @BrianMYingling</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-
-
-      <!-- ENd Twitter Feed -->
-
-
-    </aside>
-
-    <!-- End Sidebar -->
   </div>
 
-  <!-- End Main Content and Sidebar -->
+
+
+
 
 
   <!-- Footer -->
@@ -106,14 +83,11 @@
       <hr />
       <div class="row">
         <div class="twelve columns">
-          <p>&copy; Copyright &copy; 2013 Brian Yingling. All Rights Reserved.</p>
+          <p>Copyright &copy; 2013 Brian Yingling. All Rights Reserved.</p>
         </div>
-
       </div>
     </div>
   </footer>
-
-  <!-- End Footer -->
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -162,6 +136,5 @@
 
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-
 </body>
 </html>
