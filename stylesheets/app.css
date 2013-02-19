@@ -66,9 +66,22 @@ h4 {
 
 
 /* -----------------------------------------
-   Contact Page
+   About Page
 ----------------------------------------- */
 .skillset {
   margin-left: 25px;
 }
+
+.mugshot {
+  text-align: right;
+  margin: 0;
+}
+
+.mugshot img {
+  width: 225px;
+  border: 4px solid #000;
+
+}
+
+
 
