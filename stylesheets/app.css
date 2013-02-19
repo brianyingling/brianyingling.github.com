@@ -17,6 +17,10 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-family: 'Roboto Condensed';
+}
+
 div {
   background-color: #fff;
 }
