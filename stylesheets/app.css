@@ -13,7 +13,8 @@
    Shared Styles
 ----------------------------------------- */
 body {
-  background: url('../images/flowers_st_louis_mini.jpg') no-repeat fixed;
+  /*background: url('../images/flowers_st_louis_mini.jpg') no-repeat fixed;*/
+  background: rgb(5,26,37);
   background-size: cover;
 }
 

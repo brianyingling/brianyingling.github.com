@@ -13,9 +13,17 @@
    Shared Styles
 ----------------------------------------- */
 body {
-  background: url('../images/flowers_st_louis.jpg') no-repeat fixed;
+  /*background: url('../images/flowers_st_louis.jpg') no-repeat fixed;*/
+  /*background: rgb(161,55,21);*/
+  background: rgb(7,20,29);
   background-size: cover;
 }
+
+.container {
+  box-shadow: 5px 5px 50px #000;
+  border-radius: 15px;
+}
+
 
 div {
   background-color: #fff;
